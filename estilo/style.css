@@ -1,0 +1,96 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+:root {
+    --font1: Verdana, 'Geneva', Tahoma, sans-serif;
+    --font2: 'Passion One',cursive;
+    --font3: 'Sriracha', cursive;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    min-height: 100vh;
+    background-color: darkgray;
+    font-family: var(--font1);
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+header {
+    background-color: black;
+    color: white;
+    font-family: var(--font1);
+    text-align: center;
+}
+
+header > h1 {
+    font-family: var(--font2);
+    font-variant: small-caps;
+    font-size: 3.5em;
+    padding-top: 50px;
+}
+
+header > p {
+    padding-bottom: 50px;
+}
+
+section {
+    font-family: var(--font3);
+    line-height: 2em;
+    padding: 10vh 0px 10vh 30px;
+}
+
+section > p {
+    padding-bottom: 2em;
+}
+
+section.normal {
+    background-color: white;
+}
+
+section.imagem {
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.411);
+    color: white;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+section.imagem > p {
+    background-color: rgba(0, 0, 0, 0.4);
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.7);
+    display: inline-block;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#img01 {
+    background-image: url('../imagem/girassol.jpg');
+    background-position: center center;
+}
+
+#img02 {
+    background-image: url('../imagem/girassois-campo.jpg');
+    background-position: right center;
+}
+
+footer {
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
